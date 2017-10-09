@@ -12,7 +12,7 @@ class SuperheroModel extends CI_Model {
 	}
 
 	public function getSuperheroes(){
-			$this->db->order_by('name', 'ASC');
+			$this->db->order_by('id', 'ASC');
 			$query = $this->db->get('superheroes');
 			return $query->result_array();
 	}
