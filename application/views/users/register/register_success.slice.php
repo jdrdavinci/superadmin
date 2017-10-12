@@ -1,11 +1,25 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="page-header">
-				<h1>Thank you for registering your new account!</h1>
-			</div>
-			<p>You have successfully register. Please check your email inbox to confirm your email address.</p>
-		</div>
-	</div><!-- .row -->
-</div><!-- .container -->
+@extends('public_layout')
+
+@section('title', 'SuperAdmin - Registration successful')
+
+@section('content')
+
+<div class="register-box">
+
+	<div class="register-logo">
+		<a href="/"><b>SuperAdmin</b></a>
+	</div>
+
+	<div class="register-box-body">
+		<p class="login-box-msg">
+			Thank you for registering your new account!
+			<a href="/" class="text-center">Continue to the dashboard</a>
+		</p>
+
+		
+	</div>
+	<!-- /.form-box -->
+</div>
+<!-- /.register-box -->
+
+@endsection
