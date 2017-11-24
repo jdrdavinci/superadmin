@@ -117,6 +117,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<section class="content-header">
 				<h1>
 					@yield('page_title', '<h1>Welcome to SuperAdmin</h1>')
+					- 
+					<?php 
+						$controller = $this->router->class;
+						echo(call_user_func($controller .'::controllerName'));
+					?>
 				</h1>
 				<ol class="breadcrumb">
 					<li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>

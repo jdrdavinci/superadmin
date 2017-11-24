@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * 
  * @extends CI_Controller
  */
-class Dashboard extends CI_Controller {
+class Test extends CI_Controller {
 
     public function __construct()
     {
@@ -15,17 +15,11 @@ class Dashboard extends CI_Controller {
 
     public function index()
     {
-        $this->load->model("SuperheroModel", "superhero");
-
-        $superheroes = $this->superhero->getSuperheroes();
-
-        $this->slice->with('superheroes', $superheroes);
-
-        view('dashboard.index');
+        view('test.index');
     }
 
     public static function controllerName() {
-        return "Mijn dashboard";
+        return "Test controller";
     }
 
 }
